@@ -23,17 +23,23 @@
             <h6>ASSISTA ABAIXO NOSSOS CLIENTES QUE LUCRAM TODOS OS DIAS!</h6>
         </div>
         </div>
-        <div class="videos">
+        <div class="videos desapear ">
+          <div class="video" ></div>
           <div class="video" >oi</div>
           <div class="video" >oi</div>
           <div class="video" >oi</div>
-          <div class="video" >oi</div>
-          <div class="video" >oi</div>
-          <div class="video" >oi</div>
-          <div class="video" >oi</div>
-          <div class="video" >oi</div>
+          
   
         </div>
+
+      
+        <div class="contenedor">
+            <div class="izquierda" onclick="izquierda()" > < </div>
+             
+            <div class="derecha"  onclick="derecha()"> > </div>
+            <div class="images" ></div>
+        </div>
+
           <div class="under">
          
             <h6><font color="black" > MILHARES PESSOAS</font>  ESTÃO GANHANDO DINHEIRO E MUDANDO DE VIDA COM A <font color="black" > , AGORA É SUA VEZ!</font> 
@@ -64,6 +70,32 @@
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 <script>
+    let images=new Array("../assets/media/1.jpeg","../assets/media/2.jpeg","../assets/media/3.jpeg", "../assets/media/4.jpeg");
+    
+    let position=0;
+    console.log(images[position])
+    let imageSlider = document.querySelector(".images");
+    console.log(imageSlider)
+    imageSlider.style.backgroundImage='url('+images[position]+')';
+
+
+function izquierda(){
+if(position==0){
+    position=3
+}else{
+    position--
+}
+imageSlider.style.backgroundImage='url('+images[position]+')';
+}
+function derecha(){
+if(position==3){
+    position=0
+}else{
+    position++
+}
+imageSlider.style.backgroundImage='url('+images[position]+')';
+}
+
 
     function countTo(){
         let from = 60;
@@ -86,6 +118,8 @@
         }, interval);
     }
     countTo()
+
+
     
     </script>
 </html>
