@@ -43,9 +43,10 @@ width: 84%;
 background-color: transparent;
 }
 .middle img{
-    margin-top: 30px;
+    margin-top: 100px;
     margin-bottom: 15px;
-    max-width: 60%;
+    width: 35%;
+   
 }
 .title{
   display: flex;
@@ -54,12 +55,13 @@ background-color: transparent;
   flex-direction: column;
 }
 .title h1{
-    font-size: 35px;
+    font-size: 45px;
     font-weight: bold;
     color: white;
     font-weight: bold;
     text-align: center;
     margin-bottom: 15px;
+    margin-top: 20px;
 }
 .title h6{
   font-size: 24px;
@@ -109,7 +111,7 @@ background-color: violet;
    
 
 }
-.under h1{
+.under h6{
     margin-top: 10px;
     margin-bottom: 10px;
     font-weight: bold;
@@ -419,4 +421,9 @@ flex-direction:  column;
       margin-bottom: 0px;
       padding-bottom: 0px;
     }
+    .middle img{
+  
+      width: 65%;
+     
+  }
    }
