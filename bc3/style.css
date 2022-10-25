@@ -1,12 +1,13 @@
 
 .container{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-  background-image: url("../assets//media/fundo4.jpeg");
-  background: linear-gradient(#FAD240, #fff0ba);
-
+  background-image: url("https://thumbs.dreamstime.com/b/fundo-brasileiro-do-dinheiro-as-contas-chamaram-real-94742862.jpg");
+}
+.container-overlay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(252, 199, 65 ,0.85);
 
 }
 h1 {
@@ -53,7 +54,7 @@ background-color: transparent;
   flex-direction: column;
 }
 .title h1{
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bold;
     color: white;
     font-weight: bold;
@@ -61,28 +62,29 @@ background-color: transparent;
     margin-bottom: 15px;
 }
 .title h6{
-  font-size: 27px;
-  font-weight: bold;
+  font-size: 24px;
+ 
   color: white;
   text-align: center;
   margin-bottom: 15px;
 }
 .videos{
+  padding: 15px 10px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 60%;
-    padding: 5px;
+  width: 85%;
+  height: auto;
     background-color: #0000008C;
-    border-radius: 10px;
+    border-radius: 13px;
 }
 
 .video{
-    margin-bottom: 10px;
-    margin-top: 15px;
-width: 170px;
-height: 110px;
+margin-right: 5px;
+margin-bottom: 20px;
+width: 20%;
+height: 175px;
 background-color: #FDB441;
 border-radius: 8px;
 
@@ -113,6 +115,7 @@ background-color: violet;
     font-weight: bold;
     font-size: 20px;
     color: #ffffff;
+    max-width: 80%;
     
 }
 .under .icon ion-icon{
@@ -129,7 +132,8 @@ background-color: violet;
 
 }
 .footer{
-  margin-top: 10px;
+  border-top: 1px solid red;
+padding-bottom: 18px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -139,7 +143,7 @@ height: 170px;
 background-color: black;
 }
 .footer p{
-    margin: 10px;
+  
     font-size: 20px;
     color: #ffffff;
 }
@@ -263,13 +267,15 @@ background-color: black;
   100% {transform: scale(1);}
 }
 .vagas{
+  text-align: center;
     display: flex;
     justify-content: space-around;
     align-items: center;
 flex-direction:  column;
     width: 87%;
-    margin-top: 15px;
-    background-color: lightgoldenrodyellow;
+    margin-top: 25px;
+    margin-bottom: 10px;
+   background-image: url("https://i.pinimg.com/474x/df/57/df/df57df27c5abfa982284c5e00b5ae656.jpg");
    padding: 20px;
     border-radius: 8px;
     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
@@ -306,7 +312,7 @@ flex-direction:  column;
   text-align: center;
   text-decoration:none;
   display: inline-block;
-  font-size: 1.1em;
+  font-size:25px;
   font-family:Verdana, Geneva, sans-serif;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -329,36 +335,88 @@ flex-direction:  column;
   animation: pulse 1s ease infinite;
   font-size: 17px;
 }
+.counter {
+  width: auto;
+  font-size: 60px;
+  height: auto;
+  color: #FCC414;
+}
 
 
 /*Botão Pulsa*/
-@media(max-width: 425px) {
+@media(max-width: 525px) {
     .navbarr h1{
      font-size: 15px;
      padding-bottom: 5px;
     }
-  .title{
-    font-size: 20px;
+  .title h1{
+    font-size: 29px;
+  }
+  .title h6{
+    font-size: 17px;
   }
     .under h1{
         font-size: 13px;
-        margin-bottom: 100px;
+        margin-bottom: 10px;
        
     }
     .botao-pulse-vagas{
-        padding: 20px 18px;
-    }
+      padding: 20px 18px;
+  }
+    .box-pulse-vagas a{
+     font-size: 17px;
+  }
+  .box-pulse a{
+    font-size: 17px;
+ }
  
     .under .icon ion-icon{
         font-size: 10px;
         margin: 0;
         margin-bottom: 100px;
     }
-    .box-pulse-vagas {
-        width: 80%;
+    .botao-pulse {
+     padding: 10px 20px
     }
+   
+    .box-pulse-vagas {
+      width: 80%;
+  }
     .footer p{
         font-size: 10px;
+        margin-bottom: 5px;
     
+    }
+    .box-pulse{
+      width: 80%;
+     
+    }
+    .videos{
+    display: flex;
+    flex-direction: column;
+   
+    }
+    .video{
+      width: 90%;
+    }
+    .vagas{
+      width: 67%;
+    }
+    .vagas h1 { 
+      font-size: 25px;
+    }
+    .vagas h2 { 
+      font-size: 25px;
+    }
+    .vagas h3{ 
+      font-size: 25px;
+    }
+    .container img{
+    margin-top: 0;
+    }
+    .footer{
+      height: auto;
+      margin-bottom: 0px;
+      padding-bottom: 0px;
     }
    }

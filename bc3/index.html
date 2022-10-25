@@ -12,6 +12,7 @@
 </head>
 <body>
     <div class="container" >
+        <div class="container-overlay" >
         <div class="navbarr" >
             <h1>NÃO SAIA AGORA! VEJA O QUE INFLUENCERS ESTÃO DIZENDO SOBRE O CHEFE MILIONÁRIO!</h1>
         </div>
@@ -23,14 +24,14 @@
         </div>
         </div>
         <div class="videos">
-          <div class="video" ></div>
-          <div class="video" ></div>
-          <div class="video" ></div>
-          <div class="video" ></div>
-          <div class="video" ></div>
-          <div class="video" ></div>
-          <div class="video" ></div>
-          <div class="video" ></div>
+          <div class="video" >oi</div>
+          <div class="video" >oi</div>
+          <div class="video" >oi</div>
+          <div class="video" >oi</div>
+          <div class="video" >oi</div>
+          <div class="video" >oi</div>
+          <div class="video" >oi</div>
+          <div class="video" >oi</div>
   
         </div>
           <div class="under">
@@ -43,7 +44,7 @@
         </div>
         <div class="vagas" >
         <h1>RESTAM POUCAS VAGAS!</h1>
-        <h2>7</h2>
+        <div  class="counter"></div>
         <h3>GARANTA A SUA AGORA MESMO!</h3>
         <div class="box-pulse-vagas">
             <a href="#" class="botao-pulse-vagas">GARANTIR MINHA VAGA AGORA!</a></div>
@@ -62,4 +63,29 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
+<script>
+
+    function countTo(){
+        let from = 60;
+        let to = 7;
+        let step = to > from ? 1 : -1;
+        let interval = 20;
+    
+        if(from == to){
+            document.querySelector(".counter").textContent = from;
+            return;
+        }
+    
+        let counter = setInterval(function(){
+            from += step;
+            document.querySelector(".counter").textContent = from;
+    
+            if(from == to){
+                clearInterval(counter);
+            }
+        }, interval);
+    }
+    countTo()
+    
+    </script>
 </html>
