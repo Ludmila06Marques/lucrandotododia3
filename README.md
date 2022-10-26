@@ -7,5 +7,5 @@
 
 
 
-<img src="./assets/media/image1.png" width="100%" />  
-<img src="./assets/media/image2.png" width="100%" />  
+<img src="./assets/media/image1.png" width="100%" margin="0" />  
+<img src="./assets/media/image2.png" width="100%"  />  
