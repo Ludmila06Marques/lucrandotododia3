@@ -17,30 +17,29 @@
             <h1>VOCÊ ACABA DE GANHAR <font color="#" >R$50 DE DESCONTO</font> PARA ADQUIRIR O CHEFE MILIONÁRIO!</h1>
         </div>
         <div class="middle" >
-          <img src="../assets/media/chefe2.png" />
+          <img class="middle-img"  src="../assets/media/chefe2.png" />
           <div class="title">
             <h1>SERÁ QUE O CHEFE MILIONÁRIO FUNCIONA MESMO?</h1>
-            <h6>ASSISTA ABAIXO NOSSOS CLIENTES QUE LUCRAM TODOS OS DIAS!</h6>
+            <h6>VEJA ABAIXO NOSSOS CLIENTES QUE LUCRAM TODOS OS DIAS!</h6>
         </div>
         </div>
-        <div class="videos desapear ">
-          <div class="video" ></div>
-          <div class="video" >oi</div>
-          <div class="video" >oi</div>
-          <div class="video" >oi</div>
-          
-  
+        <div class="carousel">
+        <div class="slider_container">
+            <div class="slider">
+              <img src="../assets/media/'.jpeg" alt="img1" />
+              <img src="../assets/media/1.jpeg" alt="img1" />
+              <img src="../assets/media/2.jpeg" alt="img1" />
+              <img src="../assets/media/3.jpeg" alt="img1" />
+            </div>
+            <div class="indicator">
+              <span class="btn1 dots"></span>
+              <span class="btn2 dots"></span>
+              <span class="btn3 dots"></span>
+              <span class="btn4 dots"></span>
+            </div>
+          </div>
         </div>
-
-      
-        <div class="contenedor">
-            <div class="izquierda" onclick="izquierda()" > < </div>
-             
-            <div class="derecha"  onclick="derecha()"> > </div>
-            <div class="images" ></div>
-        </div>
-
-          <div class="under">
+        <div class="under">
          
             <h6><font color="black" > MILHARES PESSOAS</font>  ESTÃO GANHANDO DINHEIRO E MUDANDO DE VIDA COM A <font color="black" > , AGORA É SUA VEZ!</font> 
             </h6>
@@ -55,9 +54,19 @@
         <div class="box-pulse-vagas">
             <a href="#" class="botao-pulse-vagas">GARANTIR MINHA VAGA AGORA!</a></div>
         </div>
-       
-    </div>
-    
+        <div class="videos desapear ">
+          <div class="video" ></div>
+          <div class="video" >oi</div>
+          <div class="video" >oi</div>
+          <div class="video" >oi</div>
+          
+  
+        </div>
+
+      
+
+
+
         <div class="footer"> 
             <img src="../assets/media/chege.png" />
             <p>Termos de uso</p>
@@ -70,31 +79,24 @@
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 <script>
-    let images=new Array("../assets/media/1.jpeg","../assets/media/2.jpeg","../assets/media/3.jpeg", "../assets/media/4.jpeg");
-    
-    let position=0;
-    console.log(images[position])
-    let imageSlider = document.querySelector(".images");
-    console.log(imageSlider)
-    imageSlider.style.backgroundImage='url('+images[position]+')';
 
-
-function izquierda(){
-if(position==0){
-    position=3
-}else{
-    position--
-}
-imageSlider.style.backgroundImage='url('+images[position]+')';
-}
-function derecha(){
-if(position==3){
-    position=0
-}else{
-    position++
-}
-imageSlider.style.backgroundImage='url('+images[position]+')';
-}
+const slide = document.querySelector(".slider");
+const btn1 = document.querySelector(".btn1");
+const btn2 = document.querySelector(".btn2");
+const btn3 = document.querySelector(".btn3");
+const btn4 = document.querySelector(".btn4");
+btn1.onclick = function () {
+  slide.style.transform = "translateX(0px)";
+};
+btn2.onclick = function () {
+  slide.style.transform = "translateX(-100%)";
+};
+btn3.onclick = function () {
+  slide.style.transform = "translateX(-200%)";
+};
+btn4.onclick = function () {
+  slide.style.transform = "translateX(-300%)";
+};
 
 
     function countTo(){
