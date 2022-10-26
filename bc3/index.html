@@ -122,7 +122,15 @@ btn4.onclick = function () {
             }
         }, interval);
     }
-    
+
+    const observer = new IntersectionObserver((entries) => { 
+    entries.forEach((entry) => {
+        console.log(entry.target);
+        countTo()
+    })
+}); 
+
+observer.observe(document.querySelector('.vagas'));
 
 
     
